@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Plus Jakarta Sans";
+    font-style: bold;
+    letter-spacing: -0.3px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 12px 120px;
+}
+
+nav .nav-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav .nav-menu a {
+    text-decoration: none;
+    color: #787878;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: -0.36px;
+}
+
+nav .nav-button {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.hero {
+    /*kalau pake class maka gunakan (.) didepan tapi kalau pakai id maka gunakan (#) */
+    display: flex;
+    padding: 12px 12px 12px 120px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero .hero-left .parent-container {
+    display: flex;
+    width: 594px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 227px;
+}
+
+.hero .hero-left .label-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.hero .hero-left .label-content .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+}
+
+.hero .hero-left .label-content .content .head-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.hero .hero-left .label-content .content .head-body .hero-headline {
+    color: #111;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.hero .hero-left .label-content .content .head-body .description {
+    color: #787878;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+/*------- Button styling area -------*/
+.btn-primary {
+    color: #FFF;
+    border-radius: 12px;
+    background: var(--Primary-900, #0808B8);
+    display: flex;
+    height: 44px;
+    padding: 14px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-secondary {
+    border-radius: 12px;
+    border: 1px solid rgba(17, 17, 17, 0.20);
+    background: #FFF;
+    display: flex;
+    height: 44px;
+    padding: 13px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+/*-----------------------------------*/
+
+.hero-label {
+    border-radius: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.02);
+    padding: 6px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #0808B8;
+
+    /* Text lg - 16/Medium */
+    font-family: "SF Pro Display";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.social-prof {
+    overflow: hidden;
+    /* supaya gambar tidak keluar dari area */
+    width: 800px;
+}
+
+.sosprof-title {
+    font-weight: normal;
+    font-size: 18px;
+    margin-bottom: 16px;
+    line-height: 140%;
+    color: #787878;
+}
+
+.logo-container {
+    display: flex;
+    gap: 12px;
+    /* Jarak antar logo */
+    animation: moveLeft 20s linear infinite;
+    align-items: center;
+}
+
+.logo-container img {
+    height: 50px;
+    /* sesuaikan tinggi logo */
+    width: auto;
+}
+
+/* Animasi bergerak ke kiri */
+@keyframes moveLeft {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* ------- CSS - Why choose us section ------- */
+
+.why-choose-us {
+    display: flex;
+    padding: 120px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    background-color: #FFF;
+}
+
+.why-choose-us .parent-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    align-self: stretch;
+}
+
+.why-choose-us .parent-container .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.why-choose-us .parent-container .hero-content .hero-title {
+    color: var(--Base-Black, #001940);
+    text-align: center;
+
+    /* Display xl - 44/Bold */
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    /* 113.636% */
+}
+
+
+.feature-body {
+    color: #787878;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    /* 25.2px */
+}
+
+.why-choose-us .features-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.why-choose-us .features-grid .feature-item {
+    display: flex;
+    width: 408px;
+    padding: 20px 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.why-choose-us .features-grid .feature-item .emoji {
+    display: flex;
+    width: 52px;
+    height: 52px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: #FFF;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.05);
+}
+
+.why-choose-us .features-grid .feature-item .head-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    align-self: stretch;
+}
+
+.why-choose-us .features-grid .row-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    align-self: stretch;
+}
+
+.why-choose-us .features-grid .row-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    align-self: stretch;
+}
+
+/* Features - Row 2 styling */
+
+.why-choose-us .features-grid .feature-item-2 {
+    display: flex;
+    width: 408px;
+    padding: 20px 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    flex: 1 0 0;
+    align-self: stretch;
+    justify-content: center;
+}
+
+.why-choose-us .features-grid .feature-item-2 .emoji {
+    display: flex;
+    width: 52px;
+    height: 52px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: #FFF;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.05);
+}
+
+.why-choose-us .features-grid .feature-item-2 .head-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    align-self: stretch;
+
+}
